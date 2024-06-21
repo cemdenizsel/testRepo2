@@ -20,7 +20,7 @@
           {{ if .PrivateKey }}"{{ subst "PRIVATE_KEY=%s" .PrivateKey }}",{{else}}"PRIVATE_KEY=123",{{ end }}
           {{ if .TradeContractAddress }}"{{ subst "TRADE_CONTRACT_ADDRESS=%s" .TradeContractAddress }}",{{else}}"TRADE_CONTRACT_ADDRESS=1234"{{ end }}
         ],
-        "Image": "cemdenizsel/test_web3_ai:0.0.2"
+        "Image": "cemdenizsel/test_web3_ai:0.0.3"
       },
       "Engine": "Docker",
       "Network": {
