@@ -18,7 +18,7 @@
           {{ if .LighthouseKey }}"{{ subst "LIGHTHOUSE_KEY=%s" .LighthouseKey }}",{{else}}"LIGHTHOUSE_KEY=123",{{ end }}
           {{ if .CID }}"{{ subst "CID=%s" .CID }}",{{else}}"CID=123456789",{{ end }}
           {{ if .PrivateKey }}"{{ subst "PRIVATE_KEY=%s" .PrivateKey }}",{{else}}"PRIVATE_KEY=123",{{ end }}
-          {{ if .TradeContractAddress }}"{{ subst "TRADE_CONTRACT_ADDRESS=%s" .TradeContractAddress }}",{{else}}"TRADE_CONTRACT_ADDRESS=1234",{{ end }}
+          {{ if .TradeContractAddress }}"{{ subst "TRADE_CONTRACT_ADDRESS=%s" .TradeContractAddress }}",{{else}}"TRADE_CONTRACT_ADDRESS=1234"{{ end }}
         ],
         "Image": "cemdenizsel/test_web3_ai:latest"
       },
